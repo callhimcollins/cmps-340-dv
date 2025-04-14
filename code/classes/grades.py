@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 from config import CONFIG
 
-
 class Grades:
     def __init__(self):
         self.df = pd.read_csv(CONFIG["GRADES_CSV"])

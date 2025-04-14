@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from config import CONFIG
 import seaborn as sns
+import numpy as np
 
 class StudentDataVisualizer:
     def __init__(self):
@@ -29,7 +30,14 @@ class CSVStudentData(StudentDataVisualizer):
         plt.savefig(f"{self.config['VISUAL_PATH']}{column}_violin.png")
 
     def scatter_plot(self, x_col, y_col):
+        print(y_col)
         sns.scatterplot(data=self.df, x=x_col, y=y_col)
+
+        y_min, y_max = self.df[y_col].min(), self.df[y_col].max()
+        y_ticks = np.linspace(y_min, y_max, num=6) 
+        plt.yticks(y_ticks)
+
+    
         plt.xlim(19, 24)
         plt.xlabel(x_col)
         plt.ylabel(y_col) 
