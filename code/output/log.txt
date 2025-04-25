@@ -38,3 +38,168 @@ INFO:root:Grade stats: {'mean': GPA    3.46
 dtype: float64, 'median': GPA    3.5
 dtype: float64, 'std': GPA    0.415933
 dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.46
+dtype: float64, 'median': GPA    3.5
+dtype: float64, 'std': GPA    0.415933
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.15
+dtype: float64, 'median': GPA    3.35
+dtype: float64, 'std': GPA    0.845577
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.128571
+dtype: float64, 'median': GPA    3.2
+dtype: float64, 'std': GPA    0.773982
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.125
+dtype: float64, 'median': GPA    3.15
+dtype: float64, 'std': GPA    0.716639
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.044444
+dtype: float64, 'median': GPA    3.2
+dtype: float64, 'std': GPA    0.870504
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.044444
+dtype: float64, 'median': GPA    3.2
+dtype: float64, 'std': GPA    0.870504
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
