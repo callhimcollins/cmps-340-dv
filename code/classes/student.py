@@ -2,7 +2,8 @@
 Module: Student.py
 Author: David, Samuel
 Description: Tools for visualizing student data with histograms, box plots, violin plots, and scatter plots, along with data querying and saving visualizations as image files.
-Date: April 25th 2025
+Date: April 5th 2025
+Last updated: April 28th 2025
 """
 
 import pandas as pd
@@ -16,7 +17,10 @@ class StudentDataVisualizer:
         self.config = CONFIG
     
     def query(self, df, column, value):
-        return df[df[column] == value]
+        try:
+            return df[df[column] == value]
+        except:
+            return f"{value} not found in {column}"
         
     def plot_histogram(self, df, column):
         """Generates a histogram for the given column in the DataFrame."""
@@ -31,6 +35,7 @@ class StudentDataVisualizer:
         plt.tight_layout()
         plt.savefig(f"{self.config['VISUAL_PATH']}{column}_hist.png", dpi=300)
         plt.clf()
+        print(f"figure saved in {self.config['VISUAL_PATH']}{column}_hist.png" )
     
     def whisker_box_plot(self, df, column):
         """Generates a box plot (whisker plot) for the given column."""
@@ -42,6 +47,7 @@ class StudentDataVisualizer:
         plt.tight_layout()
         plt.savefig(f"{self.config['VISUAL_PATH']}{column}_whiskerbox.png", dpi=300)
         plt.clf()
+        print(f"figure saved in {self.config['VISUAL_PATH']}{column}_whiskerbox.png" )
     
     def violin_plot(self, df, column):
         """Generates a violin plot for the given column."""
@@ -50,6 +56,7 @@ class StudentDataVisualizer:
         plt.title(f"Violin plot for {column}")
         plt.savefig(f"{self.config['VISUAL_PATH']}{column}_violin.png")
         plt.clf()
+        print(f"figure saved in {self.config['VISUAL_PATH']}{column}_violin.png" )
     
     def scatter_plot(self, df, x_col, y_col):
         """Generates a scatter plot for the given x and y columns."""
@@ -64,6 +71,7 @@ class StudentDataVisualizer:
         plt.title(f"Scatter plot of {x_col} vs {y_col}")
         plt.savefig(f"{self.config['VISUAL_PATH']}scatter_{x_col}_{y_col}.png")
         plt.clf()
+        print(f"figure saved in {self.config['VISUAL_PATH']}scatter_{x_col}_{y_col}.png" )
 
 
 class CSVStudentData(StudentDataVisualizer):
