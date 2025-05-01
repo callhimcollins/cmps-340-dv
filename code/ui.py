@@ -6,47 +6,60 @@ Date created: April 26th 2025
 Last Updated: April 28th 2025
 """
 
-import numpy as np
-import math as mth
 from module_tmp import log
-from config import initialPrompt, viewStats, doSearch, course_list
+from config import initial_prompt, view_stats, do_search, course_list
 from classes.grades import GradeStats
 from classes.student import CSVStudentData
-studentObj = CSVStudentData()
-gradeObj = GradeStats()
 
 
+student_obj = CSVStudentData()
+grade_obj = GradeStats()
+
+###first prompt to user
 print("Welcome to CBDS High School.")
-print(initialPrompt, end="")
-promptResponse = input()
-while(promptResponse != "0"):
-    if (promptResponse =="1"):
-        print(doSearch, end="")
-        searchResponse = input()
-        while(searchResponse != "0"):
-            if searchResponse == "1":
+print(initial_prompt, end="")
+prompt_response = input()
+
+###loops till user exits
+while(prompt_response != "0"):
+    ###Option 1: perform a search
+    if (prompt_response =="1"):
+        print(do_search, end="")
+        search_response = input()
+        ##search sub-options
+        while(search_response != "0"):
+            ##find all the students in a department
+            if search_response == "1":
                 print("Enter department name:", end="")
-                depName = input()
-                print(studentObj.query(studentObj.df,"Major",depName))
-                print(f"\n{doSearch}", end="")
-                searchResponse = input()
-            elif searchResponse == "2":
+                dep_name = input()
+                print(student_obj.query(student_obj.df,"Major",dep_name))
+                print(f"\n{do_search}", end="")
+                search_response = input()
+            #
+            ##find the details of a particular student
+            elif search_response == "2":
                 print("Enter student name:")
-                stuName = input()
-                print(studentObj.query(studentObj.df,"Name",stuName))
-                print(f"\n{doSearch}", end="")
-                searchResponse = input()
-            elif searchResponse == "3":
+                stu_name = input()
+                print(student_obj.query(student_obj.df,"Name",stu_name))
+                print(f"\n{do_search}", end="")
+                search_response = input()
+            #
+            ##finds the 5 lowest GPAs
+            elif search_response == "3":
                 print("\nStruggling Students:")
-                print(gradeObj.find_struggling_students())
-                print(f"\n{doSearch}", end="")
-                searchResponse = input()
-            elif searchResponse == "4":
+                print(grade_obj.find_struggling_students())
+                print(f"\n{do_search}", end="")
+                search_response = input()
+            #
+            ##finds the top x students according to the user's input
+            elif search_response == "4":
                 print("Top? ", end="")
                 top = int(input())
-                print(f"\nTop {top} Performers:\n{gradeObj.get_top_performers(top)}\n{doSearch}", end="")
-                searchResponse = input()
-            elif searchResponse == "5":
+                print(f"\nTop {top} Performers:\n{grade_obj.get_top_performers(top)}\n{do_search}", end="")
+                search_response = input()
+            #
+            ##Finds students above a certain GPA
+            elif search_response == "5":
                 print("Threshold: ", end="")
                 try: 
                     thresh = float(input())
@@ -54,47 +67,59 @@ while(promptResponse != "0"):
                         message= "GPA cannot be negative!"
                         log(message)
                         raise ValueError(message)
-                    condition = gradeObj.df["GPA"] > thresh
-                    print(f"Students above {thresh} GPA:\n{gradeObj.query_boolean(condition)}\n{doSearch}", end="")
+                    #
+                    condition = grade_obj.df["GPA"] > thresh
+                    print(f"Students above {thresh} GPA:\n{grade_obj.query_boolean(condition)}\n{do_search}", end="")
+                #
                 except ValueError as e:
-                     print(f"{e}\n{doSearch}", end="")
-                searchResponse = input()
+                     print(f"{e}\n{do_search}", end="")
+                #
+                search_response = input()
+            #
             else:
-                print(f"Invalid input. Retry!\n{doSearch}", end="")
-                searchResponse = input()
-        print(initialPrompt, end="")
-        promptResponse = input()
-    elif promptResponse == "2":
-        print(viewStats, end="")
-        statChoice = input()
-        while statChoice != "0":
-            if statChoice =="1": gradeObj.plot_grade_histogram("GPA")
-            elif statChoice == "2": studentObj.whisker_box_plot("GPA")
-            elif statChoice == "4": studentObj.violin_plot("GPA")
-            elif statChoice == "3": studentObj.scatter_plot("Age", "GPA")
+                print(f"Invalid input. Retry!\n{do_search}", end="")
+                search_response = input()
+            #
+        print(initial_prompt, end="")
+        prompt_response = input()
+    #
+
+    ###Option 2: Visualizations.
+    elif prompt_response == "2":
+        print(view_stats, end="")
+        stat_choice = input()
+        ##visualization sub-options
+        while stat_choice != "0":
+            if stat_choice =="1": grade_obj.plot_grade_histogram("GPA")
+            elif stat_choice == "2": student_obj.whisker_box_plot("GPA")
+            elif stat_choice == "4": student_obj.violin_plot("GPA")
+            elif stat_choice == "3": student_obj.scatter_plot("Age", "GPA")
             else:
                 print("Wrong input! Retry: ", end="")
-            print(f"\n{viewStats}", end="")
-            statChoice = input()
-        print(initialPrompt, end="")
-        promptResponse = input()
-    elif promptResponse == "3":
+            #
+            print(f"\n{view_stats}", end="")
+            stat_choice = input()
+        #
+        print(initial_prompt, end="")
+        prompt_response = input()
+    #
+    ###Option 3: Fun facts using probability
+    elif prompt_response == "3":
         fact_count = 1
-        print(f"{fact_count}. {gradeObj.age_vs_success()}")
+        print(f"{fact_count}. {grade_obj.age_vs_success()}")
         for i in range(len(course_list)):
             j = i + 1
             while(j < len(course_list)):
                 fact_count += 1
-                print(f"{fact_count}. {gradeObj.probability_joint(course_list[i],course_list[j])}")
+                print(f"{fact_count}. {grade_obj.probability_joint(course_list[i],course_list[j])}")
                 j += 1
-        print(f"\n{initialPrompt}", end="")
-        promptResponse = input()
-
-
-
-
-
+            #
+        #
+        print(f"\n{initial_prompt}", end="")
+        prompt_response = input()
+    #
+#
     
-print("Bye!")   
+print("Thank you for using! Bye-bye!")   
 
 
