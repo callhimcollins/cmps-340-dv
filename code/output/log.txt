@@ -507,3 +507,114 @@ INFO:numexpr.utils:NumExpr defaulting to 8 threads.
 INFO:numexpr.utils:Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
 INFO:numexpr.utils:NumExpr defaulting to 8 threads.
 INFO:root:GPA cannot be negative!
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
+INFO:root:Grade stats: {'mean': GPA    3.046
+dtype: float64, 'median': GPA    3.1
+dtype: float64, 'std': GPA    0.611192
+dtype: float64}
+INFO:numexpr.utils:NumExpr defaulting to 4 threads.
+INFO:root:Starting the project...
