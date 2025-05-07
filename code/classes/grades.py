@@ -77,8 +77,10 @@ class GradeStats(Grades):
         noCourse1 = len(self.df2[(self.df2["Major"]== course1) & (self.df2["GPA"] >= 2.5)])
         noCourse2 = len(self.df2[(self.df2["Major"]== course2) & (self.df2["GPA"] >= 2.5)])
         totalStudents = len(self.df2)
-        prPassC1 = noCourse1/totalStudents
-        prPassC2 = noCourse2/totalStudents
+
+        probability = lambda x: x / totalStudents
+        prPassC1 = probability(noCourse1)
+        prPassC2 = probability(noCourse2)
 
         if (prPassC1 > prPassC2):
             return f"Students studying {course1} are more likely to pass than those studying {course2}" 
