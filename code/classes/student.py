@@ -73,6 +73,30 @@ class StudentDataVisualizer:
         plt.clf()
         print(f"figure saved in {self.config['VISUAL_PATH']}scatter_{x_col}_{y_col}.png" )
 
+    
+    def line_plot(self, df, x_col, y_col, hue=None):
+        """Generates a line plot for the given x and y columns."""
+        plt.figure(figsize=(8, 6))
+        try:
+            if hue:
+                sns.lineplot(data=df, x=x_col, y=y_col, hue=hue)
+                plt.title(f"Line Plot of {y_col} over {x_col} grouped by {hue}")
+                plt.legend(title=hue)
+            else:
+                sns.lineplot(data=df, x=x_col, y=y_col)
+                plt.title(f"Line Plot of {y_col} over {x_col}")
+            plt.xlabel(x_col)
+            plt.ylabel(y_col)
+            plt.grid(True, linestyle='--', alpha=0.6)
+            plt.tight_layout()
+            plt.savefig(f"{self.config['VISUAL_PATH']}line_{x_col}_{y_col}{f'_{hue}' if hue else ''}.png", dpi=300)
+            plt.clf()
+            print(f"figure saved in {self.config['VISUAL_PATH']}line_{x_col}_{y_col}{f'_{hue}' if hue else ''}.png")
+        except KeyError as e:
+            print(f"Error: One or more columns not found for line plot: {e}")
+        except Exception as e:
+            print(f"An error occurred during line plot plotting: {e}")
+
 
 class CSVStudentData(StudentDataVisualizer):
     def __init__(self):
@@ -94,3 +118,7 @@ class CSVStudentData(StudentDataVisualizer):
     def scatter_plot(self, x_col, y_col):
         print(y_col)
         super().scatter_plot(self.df, x_col, y_col)
+
+    def line_plot(self, x_col, y_col, hue=None):
+        super().line_plot(self.df, x_col, y_col, hue)    
+

@@ -11,7 +11,7 @@ CONFIG = {
     "STUDENTS_CSV": "code/input/students.csv",
     "GRADES_CSV": "code/input/grades.csv",
     "VISUAL_PATH": "code/output/visualizations/",
-    "PICKLE_PATH": "code/output/exports/gradeData"
+    "PICKLE_PATH": "code/output/exports/gradeData",
 }
 
 initial_prompt = """What would you like to do?
